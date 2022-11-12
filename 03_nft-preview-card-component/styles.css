@@ -1,0 +1,159 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--very-dark-blue-main-bg);
+  font-size: 11px
+}
+
+.card {
+  width: 450px;
+  background-color: var(--very-dark-blue-card-bg);
+  border-radius: 20px;
+  margin: 150px auto;
+
+}
+
+.first-container {
+  position: relative;
+}
+
+.first-container div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 52px);
+  z-index: 999;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  width: 400px;
+  margin: 25px;
+  border-radius: 20px;
+
+}
+
+.first-container div:hover {
+opacity: 1;
+cursor: pointer;
+}
+
+.first-container div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-equilibrium {
+  width: 400px;
+  margin: 25px;
+  border-radius: 20px;
+}
+
+.second-container .title {
+  color: var(--white);
+  margin: 0 25px;
+  font-size: 28px;
+
+}
+
+.second-container .title:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.second-container .description {
+  color: var(--soft-blue);
+  margin: 25px;
+  font-size: 23px;
+}
+
+.third-container {
+  margin: 35px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-container .ethereum {
+  color: var(--cyan);
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.third-container .icon-ethereum {
+  margin-right: 10px;
+}
+
+.third-container .days {
+  color: var(--soft-blue);
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.third-container .icon-clock {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+hr {
+  border: 1px solid var(--very-dark-blue-line);
+  margin: 35px 25px 0 25px;
+}
+
+.fourth-container {
+  color: var(--soft-blue);
+  display: flex;
+  flex-direction: row;
+  margin: 0 25px;
+  padding: 20px 0 35px 0;
+
+}
+
+.fourth-container .image-avatar {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.fourth-container .avatar-name {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+span {
+  color: var(--white);
+}
+
+span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--white);
+}
